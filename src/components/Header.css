@@ -1,0 +1,82 @@
+/* Gaya dasar untuk header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff5722;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Gaya untuk header ketika sticky */
+.header.sticky {
+  background-color: rgba(255, 87, 34, 0.9); /* Transparansi saat sticky */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+/* Gaya untuk header ketika tersembunyi */
+.header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Gaya untuk kontainer di dalam header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gaya untuk logo */
+.logo {
+  display: inline-block;
+  padding: 5px; 
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* Gaya untuk menu navigasi */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Gaya untuk item menu */
+nav li {
+  margin-left: 30px;
+}
+
+/* Gaya untuk link navigasi */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Gaya untuk link yang aktif */
+nav a.active {
+  color: #ffffff;
+}
+
+/* Gaya untuk link saat dihover */
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Tambahkan padding di bawah header untuk konten yang tidak tertutup */
+body {
+  padding-top: 80px;
+}

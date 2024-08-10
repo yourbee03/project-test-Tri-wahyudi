@@ -1,0 +1,27 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}

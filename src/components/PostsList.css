@@ -1,0 +1,35 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts-list__controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.posts-list__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.posts-list__pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.posts-list__pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.posts-list__pagination button.active {
+  background-color: #eee;
+}
